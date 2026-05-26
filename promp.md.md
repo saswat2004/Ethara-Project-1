@@ -35,44 +35,44 @@ Develop a robust, full-stack calculator application that implements a powerful m
 ---
 
 **Mathematical & Feature Requirements**
-*Implement a core logic for basic arithmetic, fractions, percentages, permutations and combinations.
-*Develop support for algebra and functions including polynomials, linear equations, exponential growth and logarithmic functions with base e and base 10.
-*Integrate comprehensive trigonometry functions such as (sine, cosine , tangent and their inverses) tied dynamically to the selected angle unit.
-*Engineer advanced calculation capabilities for calculus and matrices, supporting symbolic differentiation, definite integrals and matrix arithmetic such as (addition, multiplication ,determinants etc).
-*Support operations involving complex numbers with distinct real and imaginary components (a + bi).
-*Build an accessible , fully responsive UI utilizing ARIA labels and distinct visual states (hover, active, disabled) across mobile , tablet and desktop viewports.
+* Implement a core logic for basic arithmetic, fractions, percentages, permutations and combinations.
+* Develop support for algebra and functions including polynomials, linear equations, exponential growth and logarithmic functions with base e and base 10.
+* Integrate comprehensive trigonometry functions such as (sine, cosine , tangent and their inverses) tied dynamically to the selected angle unit.
+* Engineer advanced calculation capabilities for calculus and matrices, supporting symbolic differentiation, definite integrals and matrix arithmetic such as (addition, multiplication ,determinants etc).
+* Support operations involving complex numbers with distinct real and imaginary components (a + bi).
+* Build an accessible , fully responsive UI utilizing ARIA labels and distinct visual states (hover, active, disabled) across mobile , tablet and desktop viewports.
 
 ---
 
 **Output Requirements**
-*Generate a primary dynamic display that shows current inputs alongside real-time calculation previews.
-*Produce a responsive graphing module that visually plots complex mathematical functions.
-*Export structured JSON responses from the processing engine detailing the computed result, computation time, and any precision warnings.
-*Render an animated "History" panel with text-reveal transitions to display past calculations.
+* Generate a primary dynamic display that shows current inputs alongside real-time calculation previews.
+* Produce a responsive graphing module that visually plots complex mathematical functions.
+* Export structured JSON responses from the processing engine detailing the computed result, computation time, and any precision warnings.
+* Render an animated "History" panel with text-reveal transitions to display past calculations.
 
 ---
 
 **Error Handling and Documentation**
-*Implement real-time frontend validation for syntax errors, providing immediate user feedback (e.g., "Missing closing parenthesis") using Regex and Abstract Syntax Tree (AST) pre-parsing to catch syntax errors before execution.
-*Handle mathematical impossibilities gracefully through structured error responses (e.g., division by zero, negative square roots in real-number mode) rather than application crashes.
-*Organize the repository modularly, separating UI components, state management, and mathematical evaluation logic.
-*Custom Backend Error Classes: Handle mathematical impossibilities (e.g., division by zero, domain errors) using custom server-side error classes (e.g., MathComputationError, ParsingError) that return standardized HTTP status codes and structured JSON payloads rather than causing server crashes.
-*Document the repository thoroughly, detailing folder structure, environment variable configuration, and deployment steps.
+* Implement real-time frontend validation for syntax errors, providing immediate user feedback (e.g., "Missing closing parenthesis") using Regex and Abstract Syntax Tree (AST) pre-parsing to catch syntax errors before execution.
+* Handle mathematical impossibilities gracefully through structured error responses (e.g., division by zero, negative square roots in real-number mode) rather than application crashes.
+* Organize the repository modularly, separating UI components, state management, and mathematical evaluation logic.
+* Custom Backend Error Classes: Handle mathematical impossibilities (e.g., division by zero, domain errors) using custom server-side error classes (e.g., MathComputationError, ParsingError) that return standardized HTTP status codes and structured JSON payloads rather than causing server crashes.
+* Document the repository thoroughly, detailing folder structure, environment variable configuration, and deployment steps.
 
 ---
 
 **Performance and Scalability**
-*Optimize the application's bundle size by lazy-loading heavy graphing or symbolic math libraries only when requested by the user.
-*Implement proper debouncing for user interactions, specifically optimizing real-time graph rendering as the user types an equation.
-*Ensure UI animations are performant, utilizing GPU-friendly properties to avoid layout thrashing during state changes.
-*Architect backend or Web Worker components to support concurrent, heavy mathematical processing without bottlenecking the main thread.
+* Optimize the application's bundle size by lazy-loading heavy graphing or symbolic math libraries only when requested by the user.
+* Implement proper debouncing for user interactions, specifically optimizing real-time graph rendering as the user types an equation.
+* Ensure UI animations are performant, utilizing GPU-friendly properties to avoid layout thrashing during state changes.
+* Architect backend or Web Worker components to support concurrent, heavy mathematical processing without bottlenecking the main thread.
 
 ---
 
 **Tools and Libraries**
-*Use the following technologies :
-*React or Next.js for the frontend architecture .
-*Tailwind CSS combined with Framer Motion for styling , responsive layout, and UI fluidity.
-*Math.js (for client-side processing) or SymPy (if processing via a Python backend) for the core mathematical engine .
+* Use the following technologies :
+* React or Next.js for the frontend architecture .
+* Tailwind CSS combined with Framer Motion for styling , responsive layout, and UI fluidity.
+* Math.js (for client-side processing) or SymPy (if processing via a Python backend) for the core mathematical engine .
 *Node.js with Express or Next.js API routes for heavy logic processing.
 *Browser LocalStorage (for local history persistence) or PostgreSQL (for cloud-synced user accounts).
