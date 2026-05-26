@@ -17,20 +17,20 @@ Develop a robust, full-stack calculator application that implements a powerful m
 * Standard and complex mathematical expressions
 * Equation variables and constants
 * Matrix dimensions and cell values
-*Integration bounds for calculus operations
-*Configuration States containing:
-*Angle unit toggles (Degrees, Radians, Gradians)
-*Number system modes (Real vs. Complex)
+* Integration bounds for calculus operations
+* Configuration States containing:
+* Angle unit toggles (Degrees, Radians, Gradians)
+* Number system modes (Real vs. Complex)
 
 
 ---
 
 **Data Processing Requirements**
-*Clean and sanitize all mathematical inputs to prevent injection attacks, strictly avoiding unsafe native string execution like eval().
+* Clean and sanitize all mathematical inputs to prevent injection attacks, strictly avoiding unsafe native string execution like eval().
 
-*Implement an abstraction layer that parses complex string equations into structured operations for the math engine.
-*Maintain a secure and persistent "Calculation History" log that updates in real-time as users execute operations.
-*Manage application state efficiently to handle seamless transitions between standard keypad views, graphing tabs, and matrix input modules.
+* Implement an abstraction layer that parses complex string equations into structured operations for the math engine.
+* Maintain a secure and persistent "Calculation History" log that updates in real-time as users execute operations.
+* Manage application state efficiently to handle seamless transitions between standard keypad views, graphing tabs, and matrix input modules.
 
 ---
 
