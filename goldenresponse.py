@@ -6,7 +6,7 @@ This script sets up the base file structure matching the provided Next.js worksp
 Run:
 python generate_structure.py
 """
-
+---
 import os
 
 WORKSPACE_FILES = {
@@ -55,7 +55,7 @@ yarn-error.log*
 next-env.d.ts
 
 """,
-
+----
     "AGENTS.md": """
 <!-- BEGIN:nextjs-agent-rules -->
 # This is NOT the Next.js you know
@@ -64,12 +64,12 @@ This version has breaking changes — APIs, conventions, and file structure may 
 <!-- END:nextjs-agent-rules -->
 
 """,
-
+----
     "CLAUDE.md": """
 @AGENTS.md
 
 """,
-
+----
     "eslint.config.mjs": """
 import { defineConfig, globalIgnores } from "eslint/config";
 import nextVitals from "eslint-config-next/core-web-vitals";
@@ -87,7 +87,7 @@ const eslintConfig = defineConfig([
     "next-env.d.ts",
   ]),
 ]);
-
+-----
 export default eslintConfig;
 
 """,
@@ -101,7 +101,7 @@ import "./.next/types/routes.d.ts";
 // see https://nextjs.org/docs/app/api-reference/config/typescript for more information.
 
 """,
-
+-----
     "next.config.ts": """
 import type { NextConfig } from "next";
 
@@ -112,7 +112,7 @@ const nextConfig: NextConfig = {
 export default nextConfig;
 
 """,
-
+----
     "package.json": """
 {
   "name": "advanced-calculator",
@@ -148,7 +148,7 @@ export default nextConfig;
 }
 
 """,
-
+----
     "postcss.config.mjs": """
 const config = {
   plugins: {
@@ -159,7 +159,7 @@ const config = {
 export default config;
 
 """,
-
+------
     "README.md": """
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
@@ -199,7 +199,7 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
 
 """,
-
+------
     "tsconfig.json": """
 {
   "compilerOptions": {
@@ -239,7 +239,7 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 }
 
 """,
-
+-----
     # --- App Directory ---
     "app/page.tsx": """
 'use client';
@@ -324,7 +324,7 @@ export default function CalculatorApp() {
 }
 
 """,
-
+-----
     "app/layout.tsx": """
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
@@ -361,7 +361,7 @@ export default function RootLayout({
 }
 
 """,
-
+------
     "app/globals.css": """
 @import "tailwindcss";
 
@@ -393,7 +393,7 @@ body {
 """,
 
 }
-
+---------
 def generate_workspace():
     root_dir = os.getcwd()
 
